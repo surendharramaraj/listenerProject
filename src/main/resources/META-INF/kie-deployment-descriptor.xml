@@ -7,7 +7,13 @@
     <runtime-strategy>SINGLETON</runtime-strategy>
     <marshalling-strategies/>
     <event-listeners/>
-    <task-event-listeners/>
+    <task-event-listeners>
+        <task-event-listener>
+            <resolver>mvel</resolver>
+            <identifier>new com.myspace.listenerproject.TaskEventLstr()</identifier>
+            <parameters/>
+        </task-event-listener>
+    </task-event-listeners>
     <globals/>
     <work-item-handlers/>
     <environment-entries/>
