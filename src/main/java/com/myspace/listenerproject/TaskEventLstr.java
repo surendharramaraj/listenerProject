@@ -21,7 +21,14 @@ public class TaskEventLstr implements java.io.Serializable,TaskLifeCycleEventLis
 
     @Override
     public void afterTaskAddedEvent(TaskEvent event) {
-  
+        long taskId = event.getTask().getId();
+        String taskOwner = event.getTask().getTaskData().getTaskInputVariables().get("GroupId").toString();
+        String taskStatus = "OPEN";
+        System.out.println("-------------AFTER TASK ADDED EVENT---------------");
+        System.out.println("Taskowner -- " + taskOwner);
+        System.out.println("taskstaus -- " + taskStatus);
+        System.out.println("----FINISHED---------AFTER TASK ADDED EVENT---------------");
+        
     }
 
     @Override
@@ -31,7 +38,17 @@ public class TaskEventLstr implements java.io.Serializable,TaskLifeCycleEventLis
 
     @Override
     public void afterTaskCompletedEvent(TaskEvent event) {
-
+        
+        
+        long taskId = event.getTask().getId();
+        String taskOwner = event.getTask().getTaskData().getTaskInputVariables().get("GroupId").toString();
+        String userAction = event.getTask().getTaskData().getTaskInputVariables().get("userAction").toString();
+        String taskStatus = "COMPLETED";
+        System.out.println("-------------AFTER TASK COMPLETED EVENT---------------");
+        System.out.println("Taskowner -- " + taskOwner);
+        System.out.println("UserActio -- " + userAction);
+        System.out.println("taskstaus -- " + taskStatus);
+        System.out.println("----FINISHED---------AFTER TASK COMPLETED EVENT---------------");
     }
 
     @Override
