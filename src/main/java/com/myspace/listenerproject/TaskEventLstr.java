@@ -42,11 +42,11 @@ public class TaskEventLstr implements java.io.Serializable,TaskLifeCycleEventLis
         
         long taskId = event.getTask().getId();
         String taskOwner = event.getTask().getTaskData().getTaskInputVariables().get("GroupId").toString();
-        String userAction = event.getTask().getTaskData().getTaskInputVariables().get("userAction").toString();
+        // String userAction = event.getTask().getTaskData().getTaskInputVariables().get("userAction").toString();
         String taskStatus = "COMPLETED";
         System.out.println("-------------AFTER TASK COMPLETED EVENT---------------");
         System.out.println("Taskowner -- " + taskOwner);
-        System.out.println("UserActio -- " + userAction);
+        // System.out.println("UserActio -- " + userAction);
         System.out.println("taskstaus -- " + taskStatus);
         System.out.println("----FINISHED---------AFTER TASK COMPLETED EVENT---------------");
     }
