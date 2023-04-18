@@ -14,7 +14,162 @@ public class TaskEventLstr implements java.io.Serializable,TaskLifeCycleEventLis
     public TaskEventLstr() {
     }
 
+    @Override
+    public void afterTaskActivatedEvent(TaskEvent event) {
 
+    }
+
+    @Override
+    public void afterTaskAddedEvent(TaskEvent event) {
+  
+    }
+
+    @Override
+    public void afterTaskClaimedEvent(TaskEvent event) {
+
+    }
+
+    @Override
+    public void afterTaskCompletedEvent(TaskEvent event) {
+
+    }
+
+    @Override
+    public void afterTaskDelegatedEvent(TaskEvent event) {
+
+    }
+
+    @Override
+    public void afterTaskExitedEvent(TaskEvent event) {
+
+    }
+
+    @Override
+    public void afterTaskFailedEvent(TaskEvent event) {
+
+    }
+
+    @Override
+    public void afterTaskForwardedEvent(TaskEvent event) {
+
+    }
+
+    @Override
+    public void afterTaskNominatedEvent(TaskEvent event) {
+
+    }
+
+    @Override
+    public void afterTaskReleasedEvent(TaskEvent event) {
+
+    }
+
+    @Override
+    public void afterTaskResumedEvent(TaskEvent event) {
+
+    }
+
+    @Override
+    public void afterTaskSkippedEvent(TaskEvent event) {
+
+    }
+
+    @Override
+    public void afterTaskStartedEvent(TaskEvent event) {
+
+
+         // Get the task service from the runtime engine
+         
+
+         // Get the task instance ID from the event
+         long taskId = event.getTask().getId();
+
+    }
+
+    @Override
+    public void afterTaskStoppedEvent(TaskEvent event) {
+
+    }
+
+    @Override
+    public void afterTaskSuspendedEvent(TaskEvent event) {
+
+    }
+
+    @Override
+    public void beforeTaskActivatedEvent(TaskEvent event) {
+
+    }
+
+    @Override
+    public void beforeTaskAddedEvent(TaskEvent event) {
+
+    }
+
+    @Override
+    public void beforeTaskClaimedEvent(TaskEvent event) {
+
+    }
+
+    @Override
+    public void beforeTaskCompletedEvent(TaskEvent event) {
+
+    }
+
+    @Override
+    public void beforeTaskDelegatedEvent(TaskEvent event) {
+
+    }
+
+    @Override
+    public void beforeTaskExitedEvent(TaskEvent event) {
+
+    }
+
+    @Override
+    public void beforeTaskFailedEvent(TaskEvent event) {
+
+    }
+
+    @Override
+    public void beforeTaskForwardedEvent(TaskEvent event) {
+
+    }
+
+    @Override
+    public void beforeTaskNominatedEvent(TaskEvent event) {
+
+    }
+
+    @Override
+    public void beforeTaskReleasedEvent(TaskEvent event) {
+
+    }
+
+    @Override
+    public void beforeTaskResumedEvent(TaskEvent event) {
+
+    }
+
+    @Override
+    public void beforeTaskSkippedEvent(TaskEvent event) {
+
+    }
+
+    @Override
+    public void beforeTaskStartedEvent(TaskEvent event) {
+
+    }
+
+    @Override
+    public void beforeTaskStoppedEvent(TaskEvent event) {
+
+    }
+
+    @Override
+    public void beforeTaskSuspendedEvent(TaskEvent event) {
+
+    }
 
 
 }
