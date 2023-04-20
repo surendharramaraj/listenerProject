@@ -163,6 +163,7 @@ public class TaskEventLstr implements java.io.Serializable,TaskLifeCycleEventLis
     public void beforeTaskCompletedEvent(TaskEvent event) {
         System.out.println("-------------beforeTaskCompletedEvent---------------");
         System.out.println(event.getTask().getName());
+        System.out.println("User action + " + arg0.getTask().getTaskData().getTaskOutputVariables().get("comment").toString());
         System.out.println("------completed-------beforeTaskCompletedEvent---------------");
     }
 
